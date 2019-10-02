@@ -90,14 +90,14 @@ jQuery(document).ready(function($) {
   });
  
   days.owlCarousel({
-   	items : 4,
-    itemsMobile       : [479,4],
+   	items : 2,
+    itemsMobile       : [479,2],
     pagination:false,
 		responsiveRefreshRate : 100,
 		center: true,
     afterInit : function(el){
 			el.find(".owl-item").eq(0).addClass("synced");
-			el.find(".owl-wrapper").eq(0).addClass("center-content")
+			// el.find(".owl-wrapper").eq(0).addClass("center-content")
     }
   });
  
