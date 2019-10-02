@@ -97,7 +97,6 @@ jQuery(document).ready(function($) {
 		center: true,
     afterInit : function(el){
 			el.find(".owl-item").eq(0).addClass("synced");
-			// el.find(".owl-wrapper").eq(0).addClass("center-content")
     }
   });
  
