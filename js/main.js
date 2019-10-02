@@ -90,8 +90,8 @@ jQuery(document).ready(function($) {
   });
  
   days.owlCarousel({
-   	items : 2,
-    itemsMobile       : [479,2],
+   	// items : 2,
+    // itemsMobile       : [479,2],
     pagination:false,
 		responsiveRefreshRate : 100,
 		center: true,
