@@ -390,11 +390,17 @@ h4 {
 }
 
 .event .icon {
-	width:16%;
+	width: 20%;
 	padding:5px;
 	text-align:center;
 	display:table-cell;
 	vertical-align:middle;
+}
+
+@media screen and (max-width: 600px) {
+	.event .icon {
+		width: 35%;
+	}
 }
 
 .event .icon i {
@@ -465,7 +471,6 @@ h4 {
 .venue-address {
 	padding:15px;
 	margin:0 15px;
-	min-height:250px;
 	position:absolute;
 	bottom:0;
 }
@@ -684,11 +689,11 @@ h4 {
 }
 
 .contact {
-	padding:15px;
-	margin:0 15px 0 10px;
-	height:576px;
-	position:absolute;
-	bottom:0;
+	padding: 15px;
+	margin: 0 15px 0 0px;
+	height: 576px;
+	position: absolute;
+	bottom: 0;
 }
 
 .contact h2 {
@@ -701,12 +706,6 @@ h4 {
 
 #contact .address {
 	font-size:21px;
-	margin:20px 0;
-}
-
-#contact .social {
-	position:absolute;
-	bottom:5px;
 }
 
 #gmap_canvas {
