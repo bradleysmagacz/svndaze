@@ -28,12 +28,12 @@ jQuery(document).ready(function($) {
 		}
 	
 	var os = getMobileOperatingSystem();
-	var igLink = "https://www.instagram.com/svndze.events";
+	var igLink = "https://www.instagram.com/sundze.events";
 	if (os === "iOS") {
-		igLink = "instagram://user?username=svndaze.events";
+		igLink = "instagram://user?username=sundaze.events";
 	}
 	if (os === "Android") {
-		igLink = "intent://instagram.com/_u/svndaze.events/#Intent;package=com.instagram.android;scheme=https;end"
+		igLink = "intent://instagram.com/_u/sundaze.events/#Intent;package=com.instagram.android;scheme=https;end"
 	}
 
 	$('#igLink').attr("href", igLink);
@@ -289,7 +289,7 @@ $(window).load(function(){
         position: new google.maps.LatLng(34.0015282, -118.4832689) //change the coordinates
     });
     infowindow = new google.maps.InfoWindow({
-        content: "<b>Svndaze 2019</b><br/>2640 Main Street<br/> Santa Monica"  //add your address
+        content: "<b>Sundaze 2019</b><br/>2640 Main Street<br/> Santa Monica"  //add your address
     });
     google.maps.event.addListener(marker, "click", function () {
         infowindow.open(map, marker);
