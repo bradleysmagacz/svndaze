@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 		}
 	
 	var os = getMobileOperatingSystem();
-	var igLink = "https://www.instagram.com/sundze.events";
+	var igLink = "https://www.instagram.com/sundaze.events";
 	if (os === "iOS") {
 		igLink = "instagram://user?username=sundaze.events";
 	}
