@@ -756,12 +756,12 @@ h4 {
 	position:relative;
 	height:576px;
 	width:100%;
-	background:url(../img/top-bg.png) bottom center no-repeat;
+	background:url(../img/bottom.jpg) bottom center no-repeat;
 }
 
 #gmap_canvas img{
 	max-width:none!important;
-	background:url(../img/top-bg.png) bottom center no-repeat;
+	/* background:url(../img/bottom.jpg) bottom center no-repeat; */
 }
 
 .social {
