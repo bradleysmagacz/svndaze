@@ -507,10 +507,6 @@ h4 {
 
 /* VENUE */
 
-#venue {
-	padding:0 0 80px 0;
-}
-
 .venue {
 	background:url(../img/victorian.jpg) bottom center no-repeat;
 	width:100%;
@@ -631,10 +627,6 @@ h4 {
 
 
 /* FAQ - GALLERY */
-
-#faq-gallery {
-	padding:70px 0;
-}
 
 #faq-gallery p {
 	margin-bottom:20px;
