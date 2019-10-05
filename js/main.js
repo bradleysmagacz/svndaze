@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 		igLink = "intent://instagram.com/_u/sundaze.events/#Intent;package=com.instagram.android;scheme=https;end"
 	}
 
-	$('#igLink').attr("href", igLink);
+	$('.igLink').attr("href", igLink);
    
 	
 	//SMOOTH SCROLL
