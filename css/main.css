@@ -64,6 +64,10 @@ a:hover {
 	color: #ffaa33b5;
 }
 
+.headline {
+	line-height: 25px;
+}
+
 @media screen and (max-width: 600px) {
 	.event .icon {
 		width: 35%;
