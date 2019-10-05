@@ -57,6 +57,11 @@ video {
 
 a {
 	cursor: pointer;
+	color: #ffaa33;
+}
+
+a:hover {
+	color: #ffaa33b5;
 }
 
 @media screen and (max-width: 600px) {
