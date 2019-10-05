@@ -60,7 +60,7 @@ a {
 	color: #ffaa33;
 }
 
-a:hover {
+a:hover, a:focus {
 	color: #ffaa33b5;
 }
 
@@ -774,9 +774,6 @@ h4 {
 
 .social {
 	margin:10px 0;
-}
-
-.social .fa-inverse {
 }
 
 .social a {
