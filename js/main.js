@@ -37,8 +37,8 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.igLink').attr("href", igLink);
-	var eventLink = "https://www.eventbrite.com/e/sundaze-tickets-76084307211";
-	$('.eventLink').attr("href", eventLink);
+	// var eventLink = "https://www.eventbrite.com/e/sundaze-tickets-76084307211";
+	// $('.eventLink').attr("href", eventLink);
    
 	
 	//SMOOTH SCROLL
@@ -196,7 +196,7 @@ $(window).load(function(){
 	});
     
 	
-    //PRELOADER
+    //PRE 
     $('#preload').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
 	
 	
