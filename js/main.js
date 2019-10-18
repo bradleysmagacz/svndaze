@@ -37,6 +37,8 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.igLink').attr("href", igLink);
+	var eventLink = "https://www.eventbrite.com/e/sundaze-tickets-76084307211";
+	$('.eventLink').attr("href", eventLink);
    
 	
 	//SMOOTH SCROLL
