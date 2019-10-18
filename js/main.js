@@ -29,14 +29,18 @@ jQuery(document).ready(function($) {
 	
 	var os = getMobileOperatingSystem();
 	var igLink = "https://www.instagram.com/sundaze.events";
+	var fbLink = "https://www.facebook.com/sundaze.events";
 	if (os === "iOS") {
 		igLink = "instagram://user?username=sundaze.events";
+		fbLink = "fb://profile/263636133715334";
 	}
 	if (os === "Android") {
-		igLink = "intent://instagram.com/_u/sundaze.events/#Intent;package=com.instagram.android;scheme=https;end"
+		igLink = "intent://instagram.com/_u/sundaze.events/#Intent;package=com.instagram.android;scheme=https;end";
+		fbLink = "intent://#Intent;package=com.facebook.katana;scheme=fb://profile/263636133715334;end";
 	}
 
-	$('.igLink').attr("href", igLink);
+	$('.igLink').attr("href", igLink);	
+	$('.fbLink').attr("href", fbLink);
 	// var eventLink = "https://www.eventbrite.com/e/sundaze-tickets-76084307211";
 	// $('.eventLink').attr("href", eventLink);
    
