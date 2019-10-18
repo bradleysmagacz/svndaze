@@ -1,31 +1,6 @@
 jQuery(document).ready(function($) {
    
 	 'use strict';
-
-	 var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-
-		if ("IntersectionObserver" in window) {
-			var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-				entries.forEach(function(video) {
-					if (video.isIntersecting) {
-						for (var source in video.target.children) {
-							var videoSource = video.target.children[source];
-							if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-								videoSource.src = videoSource.dataset.src;
-							}
-						}
-
-						video.target.load();
-						video.target.classList.remove("lazy");
-						lazyVideoObserver.unobserve(video.target);
-					}
-				});
-			});
-
-			lazyVideos.forEach(function(lazyVideo) {
-				lazyVideoObserver.observe(lazyVideo);
-			});
-		}
 	 
 	/**
 		* Determine the mobile operating system.
@@ -299,31 +274,33 @@ $(window).load(function(){
 		}
 	
 	};
-	
 
-	//GOOGLE MAP
-	function init_map() {
-    var myOptions = {
-        zoom: 14,
-        center: new google.maps.LatLng(34.0015282, -118.4832689), //change the coordinates
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-		scrollwheel: false,
-		styles: [{featureType:'all',stylers:[{saturation:-100},{gamma:0.50}]}]
-    };
-    map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-    marker = new google.maps.Marker({
-        map: map,
-        position: new google.maps.LatLng(34.0015282, -118.4832689) //change the coordinates
-    });
-    infowindow = new google.maps.InfoWindow({
-        content: "<b>Sundaze 2019</b><br/>2640 Main Street<br/> Santa Monica"  //add your address
-    });
-    google.maps.event.addListener(marker, "click", function () {
-        infowindow.open(map, marker);
-    });
-    infowindow.open(map, marker);
-	}
-	google.maps.event.addDomListener(window, 'load', init_map);
+	document.addEventListener("DOMContentLoaded", function() {
+		var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+	
+		if ("IntersectionObserver" in window) {
+			var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+				entries.forEach(function(video) {
+					if (video.isIntersecting) {
+						for (var source in video.target.children) {
+							var videoSource = video.target.children[source];
+							if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+								videoSource.src = videoSource.dataset.src;
+							}
+						}
+	
+						video.target.load();
+						video.target.classList.remove("lazy");
+						lazyVideoObserver.unobserve(video.target);
+					}
+				});
+			});
+	
+			lazyVideos.forEach(function(lazyVideo) {
+				lazyVideoObserver.observe(lazyVideo);
+			});
+		}
+	});
 	
 
 	
